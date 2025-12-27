@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard - Smart City</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(120deg, #141e30, #243b55);
+        min-height: 100vh;
+        padding: 40px;
+        color: #fff;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+        font-size: 28px;
+        letter-spacing: 0.5px;
+    }
+
+    /* TABLE CONTAINER */
+    .table-container {
+        background: rgba(255,255,255,0.04);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+        max-width: 1000px;
+        margin-top: 10px;
+    }
+
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .data-table thead th {
+        text-align: left;
+        padding: 12px 10px;
+        font-size: 14px;
+        color: #d1d9e6;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .data-table tbody td {
+        padding: 12px 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+        font-size: 14px;
+    }
+
+    .btn {
+        background: rgba(255,255,255,0.08);
+        color: #fff;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>Manager</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
